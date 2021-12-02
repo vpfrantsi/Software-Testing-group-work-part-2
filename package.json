@@ -1,0 +1,20 @@
+{
+ "main": "X.js",
+ "scripts": {
+  "test": "jest"
+ },
+ "jest": {
+  "transform": {
+   "^.+\\.[t|j]sx?$": "babel-jest"
+  }
+ },
+ "dependencies": {
+  "coveralls": "^3.1.1",
+  "cross-env": "^7.0.3",
+  "jest": "^27.4.3"
+ },
+ "devDependencies": {
+  "@babel/preset-env": "^7.16.4",
+  "babel-jest": "^27.4.2"
+ }
+}
