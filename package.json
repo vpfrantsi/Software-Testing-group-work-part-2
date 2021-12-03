@@ -1,7 +1,8 @@
 {
  "main": "X.js",
  "scripts": {
-  "test": "jest"
+  "test": "jest",
+  "coveralls": ".\\node_modules\\.bin\\jest --coverage && coveralls < tests/coverage/lcov.info"
  },
 
  "dependencies": {

@@ -12,5 +12,8 @@ describe("toNumber tests", () => {
 	}),
 	test('toNumber should return 3.2 on \'3.2\'', () => {
 		expect(toNumber('3.2')).toBe(3.2);
+	}),
+	test('toNumber should return undefined on null', () => {
+		expect(toNumber(null)).toBe(0);
 	})
 });

@@ -6,6 +6,13 @@ describe("filter tests", () => {
 			{ 'user': 'barney', 'active': true },
 			{ 'user': 'fred',   'active': false }
 		];
-		expect(filter(users, ({ active }) => active)).toStrictEqual(['barney']);
+		expect(filter(users, ({ active }) => active)).toStrictEqual([{'user': 'barney', 'active': true }]);
+	}),
+	test('filter should return empty array when no objects fit the filter', () => {
+		const users2 = [
+			{ 'user': 'barney', 'active': false },
+			{ 'user': 'fred',   'active': false }
+		];
+		expect(filter(users2, ({ active }) => active)).toStrictEqual([[]]);
 	})
 });
