@@ -16,11 +16,3 @@ describe("toInteger tests", () => {
 		expect(toInteger('3.2')).toBe(3);
 	})
 });
-
-/*
- "jest": {
-  "transform": {
-   "^.+\\.[t|j]sx?$": "babel-jest"
-  }
- },
- */

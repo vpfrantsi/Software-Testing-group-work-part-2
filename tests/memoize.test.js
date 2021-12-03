@@ -1,8 +1,8 @@
 import memoize from "./COMP.SE.200-2021-2022-1-main/src/memoize.js"
 const obj = { 'a': 1, 'b': 2 };
 const other = { 'c': 3, 'd': 4 };
+const valuestest = memoize(Object.values);
 describe("memoize tests", () => {
-	console.log(valuestest(obj));
 	test('memoize should return correct values using memoized function values: [1,2]', () => {
 		expect(valuestest(obj)).toStrictEqual([1, 2]);
 	}),
